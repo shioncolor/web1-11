@@ -16,3 +16,4 @@ do{
   window.alert(message);
 }while(answer !== number);
 
+document.getElementById('choice').textContent='正解は'+number+'でした';

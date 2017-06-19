@@ -14,8 +14,7 @@ message='残念　もっと小さいです；；';
 }else{
 massage='0~3の数字を入力してください';
 }
- document.getElementById('choice').textContent=message;
 answer = parseInt(window.prompt('数あてゲーム。0～2の数字を入力してください'));
 }
 
-
+document.getElementById('choice').textContent=message;

@@ -1,22 +1,19 @@
 
 var number = Math.floor(Math.random()*3);
 var answer = parseInt(window.prompt('数あてゲーム。0～2の数字を入力してください'));
-var flag=false;
+
 var message;
 
-while(flag){
+while(1){
 if(answer === number){
 message='あたり';
-  flag=true;
+break;
 }else if(answer < number){
 message='残念　もっとおおきいです；；';
-  flag=false;
 }else if(answer > number){
 message='残念　もっと小さいです';
-  flag=false;
 }else{
 massage='0~3の数字を入力してください';
-  flag=false;
 }
 }
 

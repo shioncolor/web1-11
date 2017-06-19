@@ -11,8 +11,8 @@ do{
   }else if(answer > number){
     message='残念　もっと小さいです；；';
   }else{
-    massage='0~3の数字を入力してください';
+    message='0~2の数字を入力してください';
   }
-  window.alert(massage);
+  window.alert(message);
 }while(answer !== number);
 

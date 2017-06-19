@@ -1,9 +1,9 @@
-
+var answer = parseInt(window.prompt('数あてゲーム。0～2の数字を入力してください'));
 var number = Math.floor(Math.random()*3);
 
 var message;
 
-for (i = 0; i < 10; i++){
+while(1)
   var answer = parseInt(window.prompt('数あてゲーム。0～2の数字を入力してください'));
 if(answer === number){
 message='あたり';
@@ -15,9 +15,7 @@ message='残念　もっと小さいです；；';
 }else{
 massage='0~3の数字を入力してください';
 }
-if(i===9){
-  messeage='なんかいはずしてんねん？？？';
-}
+answer = parseInt(window.prompt('数あてゲーム。0～2の数字を入力してください'));
 }
 
 document.getElementById('choice').textContent=message;

@@ -4,16 +4,19 @@ var answer = parseInt(window.prompt('数あてゲーム。0～2の数字を入�
 
 var message;
 
-while(1){
+for (i = 0; i < 10; i++){
 if(answer === number){
 message='あたり';
 break;
 }else if(answer < number){
-message='残念　もっとおおきいです；；';
+message='残念　もっと大きいです；；';
 }else if(answer > number){
-message='残念　もっと小さいです';
+message='残念　もっと小さいです；；';
 }else{
 massage='0~3の数字を入力してください';
+}
+if(i===9){
+  messeage='なんかいはずしてんねん？？？';
 }
 }
 

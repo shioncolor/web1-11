@@ -13,6 +13,6 @@ do{
   }else{
     massage='0~3の数字を入力してください';
   }
-  document.getElementById('choice').textContent=message;
+  window.alert(massage);
 }while(answer !== number);
 
